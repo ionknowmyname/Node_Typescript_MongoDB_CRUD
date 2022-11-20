@@ -43,7 +43,7 @@ class App {
     private initialiseDatabaseConnection(): void {
         const { MONGO_PATH } = process.env;
 
-        mongoose.connect(`${MONGO_PATH}`)
+        mongoose.connect(`${MONGO_PATH}`)  // `${MONGO_PATH}`
         .then(() => {
             console.log("MongoDB connection success");
         })
